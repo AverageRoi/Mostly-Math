@@ -24,7 +24,7 @@
 
 [[main]]
   identifier = "github"
-  name = "AverageRoi"
+  name = "AverageRoi ↗"
   url = "https://github.com/AverageRoi"
   weight = 4
   [main.params]
