@@ -1,4 +1,4 @@
 ---
 title: "Notes"
-description: "Mathematical questions, calculations, and the directions they take."
+description: "All of my notebook thoughts so far."
 ---
