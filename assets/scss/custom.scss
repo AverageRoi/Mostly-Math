@@ -89,19 +89,7 @@
   .mm-graph-board { height: 260px; }
 }
 
-/* The covers are existing Wikimedia Commons mathematical illustrations, not generated artwork. */
-.article-list .article-image, .main-article .article-image { background: #272727; overflow: hidden; }
-.article-list .article-image img, .main-article .article-image img {
-  object-fit: cover;
-  object-position: center;
-  filter: invert(.86) hue-rotate(180deg) saturate(.70) contrast(.93);
-  opacity: .90;
-}
-.article-list .article-image img { height: 178px; }
-.mm-graph .mm-graph-board { background: #424242 !important; }
-.mm-cover-note { font-size: 1.25rem; color: var(--card-text-color-tertiary); }
-
-/* The covers are existing Wikimedia Commons mathematical illustrations, not generated artwork. */
+/* The covers are existing Wikimedia Commons mathematical illustrations */
 .article-list .article-image, .main-article .article-image { background: #272727; overflow: hidden; }
 .article-list .article-image img, .main-article .article-image img {
   object-fit: cover;

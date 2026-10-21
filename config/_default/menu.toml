@@ -24,8 +24,9 @@
 
 [[social]]
   identifier = "github"
-  name = "AverageRoi on GitHub"
+  name = "AverageRoi"
   url = "https://github.com/AverageRoi"
+  weight = 4
   [social.params]
     icon = "brand-github"
     newTab = true
