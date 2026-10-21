@@ -1,8 +1,15 @@
-/* Mostly Math: retaining the original Stack dark scheme. */
+/* Original Stack dark scheme. */
+.left-sidebar .site-avatar {
+    overflow: hidden;
+    border-radius: 50%;
+}
+
 .left-sidebar .site-avatar .site-logo {
-  border-radius: 15px;
-  box-shadow: none;
-  border: 1px solid var(--card-separator-color);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.12);
+    transform-origin: center;
 }
 .mm-intro {
   background: var(--card-background);
@@ -100,3 +107,15 @@
 .article-list .article-image img { height: 178px; }
 .mm-graph .mm-graph-board { background: #424242 !important; }
 .mm-cover-note { font-size: 1.25rem; color: var(--card-text-color-tertiary); }
+
+/* Navigation hover */
+#main-menu > li > a {
+    transition: color 0.2s ease,
+                transform 0.2s ease;
+}
+
+#main-menu > li > a:hover,
+#main-menu > li > a:focus-visible {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
