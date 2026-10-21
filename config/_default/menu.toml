@@ -22,11 +22,11 @@
   [main.params]
     icon = "user"
 
-[[social]]
+[[main]]
   identifier = "github"
   name = "AverageRoi"
   url = "https://github.com/AverageRoi"
   weight = 4
-  [social.params]
+  [main.params]
     icon = "brand-github"
     newTab = true
