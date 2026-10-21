@@ -1,4 +1,4 @@
 ---
 title: "Mostly Math"
-description: "A collection of mathematical digressions."
+description: "By AverageRoi"
 ---

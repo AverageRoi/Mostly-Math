@@ -5,7 +5,6 @@ SortBy = "default"
 
 [footer]
   since = 2026
-  customText = "Mostly Math · A collection of mathematical digressions."
 
 [dateFormat]
   published = ":date_medium"
@@ -14,7 +13,6 @@ SortBy = "default"
 [sidebar]
   compact = false
   avatar = "img/gamma.svg"
-  subtitle = "A collection of mathematical digressions."
 
 [article]
   headingAnchor = true
