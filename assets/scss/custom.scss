@@ -47,7 +47,8 @@
   color: var(--card-text-color-main);
 }
 .mm-graph-controls input[type="range"] {
-  width: min(100%, 190px);
+  width: 190px;
+  max-width: 100%;
   accent-color: var(--accent-color);
 }
 .mm-graph-slider { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
