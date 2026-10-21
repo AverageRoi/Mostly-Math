@@ -1,0 +1,35 @@
+{{- $kind := .Get "kind" -}}
+{{- $label := "Interactive mathematical graph" -}}
+{{- if eq $kind "products" -}}{{- $label = "Partial sums and products" -}}{{- end -}}
+{{- if eq $kind "logarithms" -}}{{- $label = "Iterated logarithm quotient" -}}{{- end -}}
+{{- if eq $kind "harmonic" -}}{{- $label = "Harmonic partial sums and line interpolation" -}}{{- end -}}
+<figure class="mm-graph" data-mm-graph="{{ $kind }}" aria-label="{{ $label }}">
+  <div class="mm-graph-controls">
+    {{- if eq $kind "products" -}}
+      <label>Number of factors / terms</label>
+      <div class="mm-graph-slider"><input aria-label="Number of factors and terms" type="range" min="2" max="35" value="10" step="1"><output class="mm-graph-count">10</output></div>
+    {{- else if eq $kind "logarithms" -}}
+      <label>Range on the transformed <i>u</i>-axis</label>
+      <div class="mm-graph-slider"><input aria-label="Largest u value" type="range" min="4" max="16" value="9" step="1"><output class="mm-graph-count">9</output></div>
+    {{- else if eq $kind "harmonic" -}}
+      <label>Harmonic points to connect</label>
+      <div class="mm-graph-slider"><input aria-label="Number of harmonic points" type="range" min="5" max="50" value="20" step="1"><output class="mm-graph-count">20</output></div>
+    {{- end -}}
+  </div>
+  <div class="mm-graph-board jxgbox" aria-label="Interactive mathematical plot"></div>
+  <div class="mm-graph-legend">
+    {{- if eq $kind "products" -}}
+      <span><i class="mm-graph-swatch" style="background:#83b5d5"></i> Sum</span>
+      <span><i class="mm-graph-swatch" style="background:#efb184"></i> Product</span>
+      <span><i class="mm-graph-swatch" style="background:#b8bcc5"></i> π²/6</span>
+    {{- else if eq $kind "logarithms" -}}
+      <span><i class="mm-graph-swatch" style="background:#83b5d5"></i> u / log₁₀ u</span>
+      <span><i class="mm-graph-swatch" style="background:#efb184"></i> Minimum at u = e</span>
+    {{- else if eq $kind "harmonic" -}}
+      <span><i class="mm-graph-swatch" style="background:#83b5d5"></i> Line segments joining Hₙ</span>
+      <span><i class="mm-graph-swatch" style="background:#efb184"></i> ln x + γ</span>
+    {{- end -}}
+  </div>
+  <figcaption class="mm-graph-caption">{{ .Inner | markdownify }}</figcaption>
+  <noscript><p class="mm-graph-noscript">Enable JavaScript to interact with this graph.</p></noscript>
+</figure>

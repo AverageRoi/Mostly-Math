@@ -1,0 +1,14 @@
+# For local development, Hugo's server automatically uses http://localhost:1313/.
+# Netlify overrides baseURL from its own published URL via netlify.toml.
+baseURL = "https://example.org/"
+title = "Mostly Math"
+locale = "en-us"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+hasCJKLanguage = false
+
+[pagination]
+  pagerSize = 8
+
+[taxonomies]
+  tag = "tags"

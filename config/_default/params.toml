@@ -1,0 +1,41 @@
+mainSections = ["post"]
+rssFullContent = true
+favicon = "img/gamma.svg"
+SortBy = "default"
+
+[footer]
+  since = 2026
+  customText = "Mostly Math · A collection of mathematical digressions."
+
+[dateFormat]
+  published = ":date_medium"
+  lastUpdated = ":date_medium"
+
+[sidebar]
+  compact = false
+  avatar = "img/gamma.svg"
+  subtitle = "A collection of mathematical digressions."
+
+[article]
+  headingAnchor = true
+  math = true
+  toc = true
+  readingTime = true
+  [article.list]
+    showTags = false
+  [article.license]
+    enabled = false
+
+[widgets]
+  homepage = []
+  page = []
+
+[colorScheme]
+  toggle = false
+  default = "dark"
+
+[comments]
+  enabled = false
+
+[opengraph.twitter]
+  card = "summary_large_image"

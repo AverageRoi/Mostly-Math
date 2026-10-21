@@ -1,0 +1,11 @@
+[build]
+  publish = "public"
+  # Netlify automatically supplies URL and DEPLOY_PRIME_URL; no hard-coded domain needed.
+  command = 'hugo --gc --minify --baseURL "${DEPLOY_PRIME_URL:-$URL}"'
+
+[build.environment]
+  HUGO_VERSION = "0.165.0"
+  HUGO_EXTENDED = "true"
+  GO_VERSION = "1.25.4"
+  HUGO_ENV = "production"
+  TZ = "Europe/Madrid"

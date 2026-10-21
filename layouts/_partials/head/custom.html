@@ -1,0 +1,5 @@
+{{- if .Params.graphs -}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsxgraph@1.14.0/distrib/jsxgraph.css">
+<script defer src="https://cdn.jsdelivr.net/npm/jsxgraph@1.14.0/distrib/jsxgraphcore.js"></script>
+<script defer src="{{ "js/mostly-graphs.js" | relURL }}"></script>
+{{- end -}}
