@@ -5,7 +5,7 @@ slug: "infinite-products-euler-primes"
 date: 2026-10-22T15:00:00+02:00
 math: true
 graphs: true
-image: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Mplwp_riemann_zeta_real_positive.svg"
+image: "https://upload.wikimedia.org/wikipedia/commons/5/53/RiemannCriticalLine.svg"
 tags: ["Infinite products", "Riemann zeta function", "Prime numbers"]
 ---
 
